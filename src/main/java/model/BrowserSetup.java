@@ -11,7 +11,7 @@ public class BrowserSetup {
     private static final ChromeOptions options = new ChromeOptions();
 
     public static WebDriver browserDriverSetUp() {
-        WebDriver driver = null;
+        WebDriver driver;
         String browserType = getBrowserType();
         options.addArguments("--remote-allow-origins=*");
         switch (browserType) {
